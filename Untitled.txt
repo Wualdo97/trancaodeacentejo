@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trancao de Acentejo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #7b1a18; /* Rojo vino */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #000; /* Negro */
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #7b1a18; /* Rojo vino */
+        }
+
+        .gallery img, .gallery video {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .review, .wine-catalog {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .wine-catalog img {
+            width: 100px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #7b1a18; /* Rojo vino */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #9b1c20; /* Rojo más oscuro */
+        }
+
+        @media (min-width: 768px) {
+            .gallery img, .gallery video {
+                max-width: 45%;
+            }
+
+            .wine-catalog {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .wine-catalog img {
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trancao de Acentejo</h1>
+        <p>Descubre la esencia de nuestros vinos</p>
+    </header>
+    <nav>
+        <a href="#about">Conócenos</a>
+        <a href="#gallery">Galería</a>
+        <a href="#reviews">Reseñas</a>
+        <a href="#catalog">Catálogo de Vinos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="about">
+        <h2>Conócenos</h2>
+        <p>Bienvenidos a Trancao de Acentejo. Somos una bodega comprometida con la calidad y la tradición de nuestros vinos. Nos enorgullece ofrecer una selección de vinos que capturan la esencia de nuestra tierra y el amor por el proceso de elaboración.</p>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Galería de Imágenes y Videos</h2>
+        <img src="ruta_de_tu_imagen1.jpg" alt="Imagen 1">
+        <img src="ruta_de_tu_imagen2.jpg" alt="Imagen 2">
+        <video src="ruta_de_tu_video.mp4" controls></video>
+    </section>
+    <section id="reviews">
+        <h2>Reseñas Positivas</h2>
+        <div class="review">
+            <p>"¡Increíble! Los vinos de Trancao de Acentejo son de lo mejor que he probado. Definitivamente volveré por más." - Cliente Satisfecho</p>
+        </div>
+        <div class="review">
+            <p>"La calidad de estos vinos es inigualable. Cada sorbo es una experiencia única." - Amante del Vino</p>
+        </div>
+    </section>
+    <section id="catalog">
+        <h2>Catálogo de Vinos</h2>
+        <div class="wine-catalog">
+            <img src="ruta_del_vino1.jpg" alt="Vino 1">
+            <p>Vino Tinto Reserva - Un vino robusto con notas a frutos rojos y un toque de especias.</p>
+        </div>
+        <div class="wine-catalog">
+            <img src="ruta_del_vino2.jpg" alt="Vino 2">
+            <p>Vino Blanco Joven - Fresco y afrutado, ideal para maridar con pescados y mariscos.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Email" required>
+            <textarea name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Síguenos en: 
+            <a href="https://instagram.com/tu_instagram" target="_blank">Instagram</a> | 
+            <a href="https://tiktok.com/@tu_tiktok" target="_blank">TikTok</a>
+        </p>
+        <p>&copy; 2024 Trancao de Acentejo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
